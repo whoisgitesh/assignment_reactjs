@@ -1,5 +1,6 @@
 {
   "name": "assignment_front_end",
+  "homepage": "https://whoisgitesh.github.io/assignment_reactjs/",
   "version": "1.0.0",
   "description": "Intern Assignment building a Web Page",
   "keywords": [
@@ -15,10 +16,13 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
